@@ -1,10 +1,15 @@
 ---
-title: "Hugo Githubpages"
+title: "Hugoを使ってGithub pages上にブログを作る(Windows)"
 date: 2020-10-12T15:13:39+09:00
-draft: true
+categories:
+  - "Development"
+tags:
+  - "hugo"
+  - "github pages"
+  - "Windows"
 ---
 
-# hugoを使ってgithub pages上にブログをつくる(Windows)
+<!--more-->
 
 ## 下準備
 - Windowsにhugo, gitをインストールしておく
@@ -13,39 +18,38 @@ draft: true
 - hugoのテーマを決めておく
 - Windows上でブログを置くフォルダを決めておく
 
-
 ## 作業
 コマンドプロンプトを管理者権限で立ち上げる
 
 ブログを置くフォルダに移動する
-```
+```sh
 > cd [ブログを置くフォルダ]
 ```
 
 powershellでの作業に切り替える
-```
+```sh
 > powershell
 ```
 
 サイトの基盤を作る
-```
+```sh
 > hugo new site blog
 ```
 
 githubと同期しておく
-```
+```sh
 > cd blog
 > git init
 > git pull git@github.com:[github上のブログ用リポジトリ].git
 ```
 
 テーマをとってくる
-```
+```sh
 > git submodule add https://github.com/vimux/mainroad themes/mainroad
 ```
 
 テーマのサンプル設定を反映する
-```
+```sh
 > cp -Force -Recurse .\themes\mainroad\exampleSite\* .
 ```
 
@@ -59,7 +63,7 @@ githubと同期しておく
 ```
 
 hugoでビルドして、githubと同期
-```
+```sh
 > hugo
 > git add -A
 > git commit -am "initial commit"

@@ -1,6 +1,6 @@
 publishDir = "docs"
 baseurl = "http://hllneerk.github.io/blog/"
-title = "Mainroad"
+title = "とまとサービス"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -22,14 +22,14 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   post_meta = ["date", "categories"] # Order of post meta information
 
 [Params.logo]
-  subtitle = "Just another site" # Logo subtitle
+  subtitle = "service development blog" # Logo subtitle
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["search", "social", "recent", "categories", "taglist"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget

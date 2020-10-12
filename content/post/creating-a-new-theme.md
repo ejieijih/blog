@@ -1,6 +1,7 @@
 ---
 title: Creating a New Theme
 date: 2014-09-28
+draft: true
 author: Michael Henderson
 ---
 
