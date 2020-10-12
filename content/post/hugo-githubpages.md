@@ -1,5 +1,5 @@
 ---
-title: "WindowsでHugoを使ってGithub pages上にブログを作る"
+title: "費用ゼロで広告も自由に貼れるブログの作り方（エンジニア向け）"
 date: 2020-10-12T15:13:39+09:00
 categories:
   - "Development"
@@ -9,8 +9,7 @@ tags:
   - "Windows"
 ---
 
-費用ゼロで、広告も自由に貼れるブログの作り方。
-エンジニア向け。
+Windowsで、Hugoを使ってGithub pages上にブログを作る。
 
 <!--more-->
 
