@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>http://hllneerk.github.io/blog/post/hugo-githubpages/</loc>
-    <lastmod>2020-10-12T15:13:39+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hllneerk.github.io/blog/post/</loc>
     <lastmod>2020-10-12T15:13:39+09:00</lastmod>
   </url>
@@ -39,6 +34,11 @@
   
   <url>
     <loc>http://hllneerk.github.io/blog/tags/windows/</loc>
+    <lastmod>2020-10-12T15:13:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hllneerk.github.io/blog/post/hugo-githubpages/</loc>
     <lastmod>2020-10-12T15:13:39+09:00</lastmod>
   </url>
   
