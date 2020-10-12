@@ -1,5 +1,5 @@
 publishDir = "docs"
-baseurl = "https://github.com/hllneerk/blog/"
+baseurl = "https://hllneerk.github.io/blog/"
 title = "Mainroad"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
