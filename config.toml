@@ -1,3 +1,4 @@
+publishDir = "docs"
 baseurl = "/"
 title = "Mainroad"
 languageCode = "en-us"
