@@ -6,8 +6,7 @@ sidebar: false
 menu: main
 ---
 
-![icon_sm](../img/icon_sm.png)
-![icon_sm](../img/avatar.png)
+<!-- ![icon_sm](../img/icon_sm.png) -->
 
 |  name  |  H"  |
 | :----: | :---- |
