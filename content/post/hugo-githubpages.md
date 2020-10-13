@@ -10,7 +10,7 @@ tags:
   - "Windows"
 ---
 
-#### WindowsでHugoを使ってGithub pages上にブログを作る
+WindowsでHugoを使ってGithub pages上にブログを作る
 
 <!--more-->
 
