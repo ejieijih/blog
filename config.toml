@@ -1,6 +1,6 @@
 publishDir = "docs"
 baseurl = "http://hllneerk.github.io/blog/"
-title = "とまとサービス"
+title = "H\" service"
 languageCode = "ja"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -8,8 +8,8 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "https://www.googletagmanager.com/gtag/js?id=UA-169225221-1" # Enable Google Analytics by entering your tracking id
 
 [Author]
-  name = "Hll"
-  bio = "Hll is a coporate researcher, who wants to create service."
+  name = "H\""
+  bio = "H\" is a corporate researcher, who wants to create service."
   avatar = "icon_sm.png"
 
 [Params]
