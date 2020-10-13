@@ -5,7 +5,7 @@ languageCode = "ja"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
-googleAnalytics = "https://www.googletagmanager.com/gtag/js?id=UA-169225221-2"
+googleAnalytics = "UA-169225221-2"
 
 [Author]
   name = "H\""
