@@ -6,7 +6,16 @@
     <description>Recent content in hugo on とまとサービス</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2020 15:13:39 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2020 14:29:03 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugoでサムネ画像をtwitter cardに反映</title>
+      <link>http://hllneerk.github.io/blog/post/twitter-card-image-hugo-mainroad/</link>
+      <pubDate>Tue, 13 Oct 2020 14:29:03 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/post/twitter-card-image-hugo-mainroad/</guid>
+      <description>&lt;p&gt;hugoのtheme: mainroadはtwitter card自体には対応しているけど、画像は反映されないので、反映されるように改造する&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>費用ゼロで広告も自由に貼れるブログの作り方【エンジニア向け】</title>
       <link>http://hllneerk.github.io/blog/post/hugo-githubpages/</link>
