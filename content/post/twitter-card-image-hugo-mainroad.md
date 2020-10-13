@@ -2,6 +2,7 @@
 title: "hugoでサムネ画像をtwitter cardに反映"
 date: 2020-10-13T14:29:03+09:00
 # draft: true
+thumbnail: "twitter_card.png"
 categories:
   - "Development"
 tags:
@@ -33,11 +34,29 @@ static/test.png
 <meta name="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" />
 ```
 
-ビルドすると反映される
+ビルドして反映
 ```sh
 > hugo
 ```
 
+反映されているか確認
+
+`docs/post/[記事名]/index.html`に以下が反映されていればok
+```html
+<meta name="og:image" content="[サイトのurl]/test.png" />
+```
+
+github pagesと同期
+```sh
+git add -A
+git commit -am "add twitter-card image"
+git push remote
+```
+
+[twitter card validator](https://cards-dev.twitter.com/validator)で動作確認
+
+![twitter_card](../../twitter_card.png)
 
 # 参考
-[HugoでのTwitterカード設定サンプル](https://qiita.com/alkn203/items/5f781d5d6ad6e400d812)
+- [HugoでのTwitterカード設定サンプル](https://qiita.com/alkn203/items/5f781d5d6ad6e400d812)
+- [twitter card validator](https://cards-dev.twitter.com/validator)

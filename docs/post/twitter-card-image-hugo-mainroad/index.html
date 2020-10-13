@@ -8,7 +8,7 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 
-	<meta name="og:image" content="http://hllneerk.github.io/blog/" />
+	<meta name="og:image" content="http://hllneerk.github.io/blog/twitter_card.png" />
 		<meta property="og:title" content="hugoでサムネ画像をtwitter cardに反映" />
 <meta property="og:description" content="hugoのtheme: mainroadはtwitter card自体には対応しているけど、画像は反映されないので、反映されるように改造する" />
 <meta property="og:type" content="article" />
@@ -85,7 +85,10 @@ if (!doNotTrack) {
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-10-13T14:29:03&#43;09:00">October 13, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/development/" rel="category">Development</a>
 	</span>
 </div></div>
-		</header><div class="content post__content clearfix">
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/blog/twitter_card.png" alt="hugoでサムネ画像をtwitter cardに反映">
+		</figure><div class="content post__content clearfix">
 			<p>hugoのtheme: mainroadはtwitter card自体には対応しているけど、画像は反映されないので、反映されるように改造する</p>
 <h3 id="記事のサムネ画像を設定">記事のサムネ画像を設定</h3>
 <p>画像を<code>static/</code>に画像(ここではtest.png)を置く</p>
@@ -99,10 +102,22 @@ if (!doNotTrack) {
 </code></pre></div><h3 id="twitter-cardの画像をサムネ画像に設定">twitter cardの画像をサムネ画像に設定</h3>
 <p><code>themes/mainroad/layouts/_default/baseof.html</code>をエディタで開いて、headの中に以下のメタタグを追記</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:image&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.BaseURL }}{{ .Params.thumbnail }}&#34;</span> /&gt;
-</code></pre></div><p>ビルドすると反映される</p>
+</code></pre></div><p>ビルドして反映</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; hugo
-</code></pre></div><h1 id="参考">参考</h1>
-<p><a href="https://qiita.com/alkn203/items/5f781d5d6ad6e400d812">HugoでのTwitterカード設定サンプル</a></p>
+</code></pre></div><p>反映されているか確認</p>
+<p><code>docs/post/[記事名]/index.html</code>に以下が反映されていればok</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:image&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[サイトのurl]/test.png&#34;</span> /&gt;
+</code></pre></div><p>github pagesと同期</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git add -A
+git commit -am <span style="color:#e6db74">&#34;add twitter-card image&#34;</span>
+git push remote
+</code></pre></div><p><a href="https://cards-dev.twitter.com/validator">twitter card validator</a>で動作確認</p>
+<p><img src="../../twitter_card.png" alt="twitter_card"></p>
+<h1 id="参考">参考</h1>
+<ul>
+<li><a href="https://qiita.com/alkn203/items/5f781d5d6ad6e400d812">HugoでのTwitterカード設定サンプル</a></li>
+<li><a href="https://cards-dev.twitter.com/validator">twitter card validator</a></li>
+</ul>
 		</div>
 		<footer class="post__footer">
 			
