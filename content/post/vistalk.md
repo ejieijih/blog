@@ -1,7 +1,7 @@
 ---
 title: "会話を可視化するサービスの構想: vistalk(仮)"
 date: 2020-10-13T17:08:23+09:00
-# draft: true
+draft: true
 thumbnail: "vistalk.png"
 categories:
   - "Development"
