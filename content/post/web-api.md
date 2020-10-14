@@ -61,7 +61,7 @@ REST APIはgithub pagesで使えるんだろうか？
 - JavaScriptからREST APIを呼び出すのもできる
 - ただし、ソースが公開されちゃうので、アクセストークンや認証まわりをセキュアにするにはOAuth.io等の工夫が必要
 
-参考
+参考  
 [GitHub Pages 上で Web Application Flow で GitHub API を使用する](https://qiita.com/yuya_takeyama/items/5ee0fe953b0848cd63fb)  
 [GitHub PagesでJavascriptが動作するWebサイトを無料公開してみた](https://www.apnari.com/entry/GitHubPages-intro)  
 [GitHub Pages を使った静的サイトの公開方法が、とても簡単になっていた](https://www.tam-tam.co.jp/tipsnote/html_css/post11245.html)
