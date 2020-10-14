@@ -23,7 +23,7 @@ AmazonやTwitterがAPIを公開することで収益を拡大してきたらし�
 具体的にWeb APIはどんな種類のものがあるのか
 
 参考  
-[Web APIとは何なのか](https://qiita.com/NagaokaKenichi/items/df4c8455ab527aeacf02)
+- [Web APIとは何なのか](https://qiita.com/NagaokaKenichi/items/df4c8455ab527aeacf02)
 
 
 ## Web APIの分類
@@ -41,8 +41,8 @@ AmazonやTwitterがAPIを公開することで収益を拡大してきたらし�
 REST APIって何？
 
 参考   
-[時代はAPIファースト!? イマドキの業務システム開発ことはじめ 第3回](https://www.knowledgewing.com/kw/blog/2017/03/201703300900.html)
-[Web API の紹介](https://developer.mozilla.org/ja/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
+- [時代はAPIファースト!? イマドキの業務システム開発ことはじめ 第3回](https://www.knowledgewing.com/kw/blog/2017/03/201703300900.html)
+- [Web API の紹介](https://developer.mozilla.org/ja/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
 
 ## REST APIとは
 > REST(REpresentational State Transfer)はWebサービスの設計モデルです。RESTなWebサービスは、そのサービスのURIにHTTPメソッドでアクセスすることでデータの送受信を行います。
@@ -54,7 +54,7 @@ REST APIって何？
 REST APIはgithub pagesで使えるんだろうか？
 
 参考  
-[REST入門 基礎知識](https://qiita.com/TakahiRoyte/items/949f4e88caecb02119aa)
+- [REST入門 基礎知識](https://qiita.com/TakahiRoyte/items/949f4e88caecb02119aa)
 
 ## github pagesでREST APIは使えるか
 - github pagesでJavaScriptが動作するWebサイトは公開可能
@@ -62,6 +62,6 @@ REST APIはgithub pagesで使えるんだろうか？
 - ただし、ソースが公開されちゃうので、アクセストークンや認証まわりをセキュアにするにはOAuth.io等の工夫が必要
 
 参考
-[GitHub Pages 上で Web Application Flow で GitHub API を使用する](https://qiita.com/yuya_takeyama/items/5ee0fe953b0848cd63fb)
-[GitHub PagesでJavascriptが動作するWebサイトを無料公開してみた](https://www.apnari.com/entry/GitHubPages-intro)
-[GitHub Pages を使った静的サイトの公開方法が、とても簡単になっていた](https://www.tam-tam.co.jp/tipsnote/html_css/post11245.html)
+- [GitHub Pages 上で Web Application Flow で GitHub API を使用する](https://qiita.com/yuya_takeyama/items/5ee0fe953b0848cd63fb)
+- [GitHub PagesでJavascriptが動作するWebサイトを無料公開してみた](https://www.apnari.com/entry/GitHubPages-intro)
+- [GitHub Pages を使った静的サイトの公開方法が、とても簡単になっていた](https://www.tam-tam.co.jp/tipsnote/html_css/post11245.html)
