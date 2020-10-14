@@ -6,7 +6,52 @@
     <description>Recent content in Tags on H&#34; service</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Oct 2020 14:29:03 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2020 17:08:23 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API</title>
+      <link>http://hllneerk.github.io/blog/tags/api/</link>
+      <pubDate>Tue, 13 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>アイデア</title>
+      <link>http://hllneerk.github.io/blog/tags/%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2/</link>
+      <pubDate>Tue, 13 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/tags/%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>キーフレーズ抽出</title>
+      <link>http://hllneerk.github.io/blog/tags/%E3%82%AD%E3%83%BC%E3%83%95%E3%83%AC%E3%83%BC%E3%82%BA%E6%8A%BD%E5%87%BA/</link>
+      <pubDate>Tue, 13 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/tags/%E3%82%AD%E3%83%BC%E3%83%95%E3%83%AC%E3%83%BC%E3%82%BA%E6%8A%BD%E5%87%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>画像検索</title>
+      <link>http://hllneerk.github.io/blog/tags/%E7%94%BB%E5%83%8F%E6%A4%9C%E7%B4%A2/</link>
+      <pubDate>Tue, 13 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/tags/%E7%94%BB%E5%83%8F%E6%A4%9C%E7%B4%A2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>音声認識</title>
+      <link>http://hllneerk.github.io/blog/tags/%E9%9F%B3%E5%A3%B0%E8%AA%8D%E8%AD%98/</link>
+      <pubDate>Tue, 13 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/tags/%E9%9F%B3%E5%A3%B0%E8%AA%8D%E8%AD%98/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>http://hllneerk.github.io/blog/tags/hugo/</link>

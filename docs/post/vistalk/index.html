@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>会話を可視化するサービスの構想: vistalk(仮) - H&#34; service</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+
+	<meta name="og:image" content="http://hllneerk.github.io/blog/vistalk.png" />
+		<meta property="og:title" content="会話を可視化するサービスの構想: vistalk(仮)" />
+<meta property="og:description" content="作りたいサービスの具現化に向けて情報収集する。サービス名は仮に&quot;vistalk&quot;と呼ぶことにする。
+作りたいサービス: vistalk（仮）  サービス（Webサイト）を立ち上げた状態で会話すると、 会話が勝手にテキスト変換され、 キーフレーズに関連するリンクやECサイトの商品リンクが画像として表示される ユーザーは、画像自体やリンクをたどって得た情報を得て、会話を深める  こんなイメージ 必要な機能をリスト化すると
+ 音声認識 キーワード抽出 画像検索  各種機能の実現方法を検討 音声認識 chromeだとWeb Speech APIを使えば実現可能。
+ Webページでブラウザの音声認識機能を使おう - Web Speech API Speech Recognition  これを使う
+キーワード抽出 技術的に簡単そうなのは形態素解析⇒固有名詞抽出？
+Kuromoji.js
+ Kuromoji を使ってブラウザ上で形態素解析を行う (Reactあり/なし)  意外にもクライアントサイドの JavaScript のみ行けました。
+  クライアントPCにkuromojiをインストールが必要   kuromoji.js demo  開発用途なら無料のWeb API
+ Yahoo, テキスト解析Web API, 日本語形態素解析  キーワードを抽出するならこちらがベター
+ Yahoo, テキスト解析Web API, キーフレーズ抽出  キーワードを直接抽出できそうな、Yahooのキーフレーズ抽出APIを使う
+画像検索 関連商品があれば広告を表示 ここで収益化。
+「キーフレーズ⇒商品検索⇒紹介リンク作成」が自動化できればいい。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hllneerk.github.io/blog/post/vistalk/" />
+<meta property="article:published_time" content="2020-10-13T17:08:23+09:00" />
+<meta property="article:modified_time" content="2020-10-13T17:08:23+09:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="会話を可視化するサービスの構想: vistalk(仮)"/>
+<meta name="twitter:description" content="作りたいサービスの具現化に向けて情報収集する。サービス名は仮に&quot;vistalk&quot;と呼ぶことにする。
+作りたいサービス: vistalk（仮）  サービス（Webサイト）を立ち上げた状態で会話すると、 会話が勝手にテキスト変換され、 キーフレーズに関連するリンクやECサイトの商品リンクが画像として表示される ユーザーは、画像自体やリンクをたどって得た情報を得て、会話を深める  こんなイメージ 必要な機能をリスト化すると
+ 音声認識 キーワード抽出 画像検索  各種機能の実現方法を検討 音声認識 chromeだとWeb Speech APIを使えば実現可能。
+ Webページでブラウザの音声認識機能を使おう - Web Speech API Speech Recognition  これを使う
+キーワード抽出 技術的に簡単そうなのは形態素解析⇒固有名詞抽出？
+Kuromoji.js
+ Kuromoji を使ってブラウザ上で形態素解析を行う (Reactあり/なし)  意外にもクライアントサイドの JavaScript のみ行けました。
+  クライアントPCにkuromojiをインストールが必要   kuromoji.js demo  開発用途なら無料のWeb API
+ Yahoo, テキスト解析Web API, 日本語形態素解析  キーワードを抽出するならこちらがベター
+ Yahoo, テキスト解析Web API, キーフレーズ抽出  キーワードを直接抽出できそうな、Yahooのキーフレーズ抽出APIを使う
+画像検索 関連商品があれば広告を表示 ここで収益化。
+「キーフレーズ⇒商品検索⇒紹介リンク作成」が自動化できればいい。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/blog/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-169225221-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog/" title="H&#34; service" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">H&#34; service</div>
+					<div class="logo__tagline">service development blog</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/blog/about/">
+				
+				<span class="menu__text">About Me</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">会話を可視化するサービスの構想: vistalk(仮)</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-10-13T17:08:23&#43;09:00">October 13, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/development/" rel="category">Development</a>
+	</span>
+</div></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/blog/vistalk.png" alt="会話を可視化するサービスの構想: vistalk(仮)">
+		</figure><div class="content post__content clearfix">
+			<p>作りたいサービスの具現化に向けて情報収集する。サービス名は仮に&quot;vistalk&quot;と呼ぶことにする。</p>
+<h2 id="作りたいサービス-vistalk仮">作りたいサービス: vistalk（仮）</h2>
+<ol>
+<li>サービス（Webサイト）を立ち上げた状態で会話すると、</li>
+<li>会話が勝手にテキスト変換され、</li>
+<li>キーフレーズに関連するリンクやECサイトの商品リンクが画像として表示される</li>
+<li>ユーザーは、画像自体やリンクをたどって得た情報を得て、会話を深める</li>
+</ol>
+<p>こんなイメージ
+<img src="../../vistalk.png" alt=""></p>
+<p>必要な機能をリスト化すると</p>
+<ul>
+<li>音声認識</li>
+<li>キーワード抽出</li>
+<li>画像検索</li>
+</ul>
+<h2 id="各種機能の実現方法を検討">各種機能の実現方法を検討</h2>
+<h3 id="音声認識">音声認識</h3>
+<p>chromeだとWeb Speech APIを使えば実現可能。</p>
+<ul>
+<li><a href="https://qiita.com/hmmrjn/items/4b77a86030ed0071f548">Webページでブラウザの音声認識機能を使おう - Web Speech API Speech Recognition</a></li>
+</ul>
+<p>これを使う</p>
+<h3 id="キーワード抽出">キーワード抽出</h3>
+<p>技術的に簡単そうなのは形態素解析⇒固有名詞抽出？</p>
+<p>Kuromoji.js</p>
+<ul>
+<li><a href="https://qiita.com/torao@github/items/45ad9640cf94d3169cae">Kuromoji を使ってブラウザ上で形態素解析を行う (Reactあり/なし)</a>
+<blockquote>
+<p>意外にもクライアントサイドの JavaScript のみ行けました。</p>
+</blockquote>
+<ul>
+<li>クライアントPCにkuromojiをインストールが必要</li>
+</ul>
+</li>
+<li><a href="http://takuyaa.github.io/kuromoji.js/demo/tokenize.html">kuromoji.js demo</a></li>
+</ul>
+<p>開発用途なら無料のWeb API</p>
+<ul>
+<li><a href="https://developer.yahoo.co.jp/webapi/jlp/ma/v1/parse.html">Yahoo, テキスト解析Web API, 日本語形態素解析</a></li>
+</ul>
+<p>キーワードを抽出するならこちらがベター</p>
+<ul>
+<li><a href="https://developer.yahoo.co.jp/webapi/jlp/keyphrase/v1/extract.html">Yahoo, テキスト解析Web API, キーフレーズ抽出</a></li>
+</ul>
+<p>キーワードを直接抽出できそうな、Yahooのキーフレーズ抽出APIを使う</p>
+<h3 id="画像検索">画像検索</h3>
+<h5 id="関連商品があれば広告を表示">関連商品があれば広告を表示</h5>
+<p>ここで収益化。<br>
+「キーフレーズ⇒商品検索⇒紹介リンク作成」が自動化できればいい。</p>
+<p>楽天</p>
+<ul>
+<li><a href="https://webservice.rakuten.co.jp/api/ichibaitemsearch/#requestURL">楽天商品検索API</a>: 「キーフレーズ⇒商品検索」ができそう
+<blockquote>
+<p>デベロッパーは、楽天商品検索APIから取得した商品情報からアフィリエイトURLを作成することが可能です。リンク先にそのアフィリエイトURLを指定することで、楽天アフィリエイト経由の成果報酬を獲得することができます。</p>
+</blockquote>
+</li>
+<li><a href="https://affiliate.rakuten.co.jp/campaign/2020/rankup_g/?scid=af_g_202005">楽天アフィリエイト</a>: ここでも人力で同じような処理ができる</li>
+</ul>
+<p>Amazon</p>
+<ul>
+<li><a href="https://images-na.ssl-images-amazon.com/images/G/09/associates/paapi/dg/index.html">Product Advertising API の概要</a>
+<blockquote>
+<p>よりすばらしいことに、Product Advertising API は無料でご利用いただけます。すでに数多くの Product Advertising API 利用者が、このサービスを利用したアプリケーションやオンラインストアを開発し、アソシエイトとしての報酬を手にしています。Amazon アソシエイト・プログラムメンバーへの登録と併せて、 Product Advertising API の利用登録を行うことで、誰でも Product Advertising API により作成されたアプリケーションや Web サイトを通じてアソシエイト報酬を獲得できます</p>
+</blockquote>
+</li>
+<li><a href="https://affiliate.amazon.co.jp/help/node/topic/GMEDADBTCJ9KD8DQ">Product Advertising API について</a>: amazonアソシエイト・プログラム登録には審査が必要</li>
+</ul>
+<p>ゴールド会員になっている楽天の商品検索APIを使う</p>
+<h5 id="なければ画像検索結果を表示">なければ画像検索結果を表示</h5>
+<p>有名どころのAPIは無料枠が限定的</p>
+<ul>
+<li><a href="https://qiita.com/daisy1754/items/92943169cb3438b1879e">無料で使える画像検索APIとリクエスト数制限まとめ</a></li>
+</ul>
+<p>Rakuten Rapid APIなら割安</p>
+<ul>
+<li><a href="https://api.rakuten.net/imgur/api/imgur-9/pricing">Imgur</a></li>
+</ul>
+<p>だが、完全無料がいい。</p>
+<p>完全無料でやるなら、サーバ使ってスクレイピング</p>
+<ul>
+<li><a href="https://qiita.com/Yuki-Takatsu/items/3f30727d5b21a83ea4ed">PythonでGoogle画像検索をして画像をフォルダに保存する</a></li>
+</ul>
+<p>★だが、できればgithub pagesで完結したい</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog/tags/%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2/" rel="tag">アイデア</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog/tags/%E9%9F%B3%E5%A3%B0%E8%AA%8D%E8%AD%98/" rel="tag">音声認識</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog/tags/%E3%82%AD%E3%83%BC%E3%83%95%E3%83%AC%E3%83%BC%E3%82%BA%E6%8A%BD%E5%87%BA/" rel="tag">キーフレーズ抽出</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog/tags/%E7%94%BB%E5%83%8F%E6%A4%9C%E7%B4%A2/" rel="tag">画像検索</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog/tags/api/" rel="tag">API</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/blog/post/twitter-card-image-hugo-mainroad/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">hugoでサムネ画像をtwitter cardに反映</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="http://hllneerk.github.io/blog/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/blog/post/vistalk/">会話を可視化するサービスの構想: vistalk(仮)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/post/twitter-card-image-hugo-mainroad/">hugoでサムネ画像をtwitter cardに反映</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/post/hugo-githubpages/">費用ゼロで広告も自由に貼れるブログの作り方【エンジニア向け】</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/blog/categories/development/">Development</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/api/" title="API">API</a>
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/github-pages/" title="github pages">github pages</a>
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/hugo/" title="hugo">hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/windows/" title="Windows">Windows</a>
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2/" title="アイデア">アイデア</a>
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/%E3%82%AD%E3%83%BC%E3%83%95%E3%83%AC%E3%83%BC%E3%82%BA%E6%8A%BD%E5%87%BA/" title="キーフレーズ抽出">キーフレーズ抽出</a>
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/%E7%94%BB%E5%83%8F%E6%A4%9C%E7%B4%A2/" title="画像検索">画像検索</a>
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/%E9%9F%B3%E5%A3%B0%E8%AA%8D%E8%AD%98/" title="音声認識">音声認識</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 H&#34; service.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog/js/menu.js"></script>
+</body>
+</html>

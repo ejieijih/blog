@@ -6,7 +6,27 @@
     <description>Recent content in Posts on H&#34; service</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Oct 2020 14:29:03 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2020 17:08:23 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>会話を可視化するサービスの構想: vistalk(仮)</title>
+      <link>http://hllneerk.github.io/blog/post/vistalk/</link>
+      <pubDate>Tue, 13 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/post/vistalk/</guid>
+      <description>作りたいサービスの具現化に向けて情報収集する。サービス名は仮に&amp;quot;vistalk&amp;quot;と呼ぶことにする。
+作りたいサービス: vistalk（仮）  サービス（Webサイト）を立ち上げた状態で会話すると、 会話が勝手にテキスト変換され、 キーフレーズに関連するリンクやECサイトの商品リンクが画像として表示される ユーザーは、画像自体やリンクをたどって得た情報を得て、会話を深める  こんなイメージ 必要な機能をリスト化すると
+ 音声認識 キーワード抽出 画像検索  各種機能の実現方法を検討 音声認識 chromeだとWeb Speech APIを使えば実現可能。
+ Webページでブラウザの音声認識機能を使おう - Web Speech API Speech Recognition  これを使う
+キーワード抽出 技術的に簡単そうなのは形態素解析⇒固有名詞抽出？
+Kuromoji.js
+ Kuromoji を使ってブラウザ上で形態素解析を行う (Reactあり/なし)  意外にもクライアントサイドの JavaScript のみ行けました。
+  クライアントPCにkuromojiをインストールが必要   kuromoji.js demo  開発用途なら無料のWeb API
+ Yahoo, テキスト解析Web API, 日本語形態素解析  キーワードを抽出するならこちらがベター
+ Yahoo, テキスト解析Web API, キーフレーズ抽出  キーワードを直接抽出できそうな、Yahooのキーフレーズ抽出APIを使う
+画像検索 関連商品があれば広告を表示 ここで収益化。
+「キーフレーズ⇒商品検索⇒紹介リンク作成」が自動化できればいい。</description>
+    </item>
+    
     <item>
       <title>hugoでサムネ画像をtwitter cardに反映</title>
       <link>http://hllneerk.github.io/blog/post/twitter-card-image-hugo-mainroad/</link>

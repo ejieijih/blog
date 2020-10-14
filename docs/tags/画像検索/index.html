@@ -4,19 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>github pages - H&#34; service</title>
+	<title>画像検索 - H&#34; service</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 
 	<meta name="og:image" content="http://hllneerk.github.io/blog/" />
-		<meta property="og:title" content="github pages" />
+		<meta property="og:title" content="画像検索" />
 <meta property="og:description" content="Hll&#39;s blog on service development" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://hllneerk.github.io/blog/tags/github-pages/" />
-<meta property="og:updated_time" content="2020-10-12T15:13:39+09:00" />
+<meta property="og:url" content="http://hllneerk.github.io/blog/tags/%E7%94%BB%E5%83%8F%E6%A4%9C%E7%B4%A2/" />
+<meta property="og:updated_time" content="2020-10-13T17:08:23+09:00" />
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="github pages"/>
+<meta name="twitter:title" content="画像検索"/>
 <meta name="twitter:description" content="Hll&#39;s blog on service development"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 
 	<link rel="stylesheet" href="/blog/css/style.css">
 	
-	<link rel="alternate" type="application/rss+xml" href="/blog/tags/github-pages/index.xml" title="H" service">
+	<link rel="alternate" type="application/rss+xml" href="/blog/tags/%E7%94%BB%E5%83%8F%E6%A4%9C%E7%B4%A2/index.xml" title="H" service">
 
 	<link rel="shortcut icon" href="/blog/favicon.ico">
 		
@@ -78,27 +78,38 @@ if (!doNotTrack) {
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">github pages</h1>
+		<h1 class="main__title">画像検索</h1>
 	</header><article class="list__item post">
 	<figure class="list__thumbnail">
-		<a href="http://hllneerk.github.io/blog/post/hugo-githubpages/">
-			<img src="/blog/20201013_githubpages.png" alt="費用ゼロで広告も自由に貼れるブログの作り方【エンジニア向け】" />
+		<a href="http://hllneerk.github.io/blog/post/vistalk/">
+			<img src="/blog/vistalk.png" alt="会話を可視化するサービスの構想: vistalk(仮)" />
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/blog/post/hugo-githubpages/" rel="bookmark">
-			費用ゼロで広告も自由に貼れるブログの作り方【エンジニア向け】
+			<a href="/blog/post/vistalk/" rel="bookmark">
+			会話を可視化するサービスの構想: vistalk(仮)
 			</a>
 		</h2>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-10-12T15:13:39&#43;09:00">October 12, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/development/" rel="category">Development</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-10-13T17:08:23&#43;09:00">October 13, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/development/" rel="category">Development</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		<p>WindowsでHugoを使ってGithub pages上にブログを作る</p>
+		作りたいサービスの具現化に向けて情報収集する。サービス名は仮に&quot;vistalk&quot;と呼ぶことにする。
+作りたいサービス: vistalk（仮）  サービス（Webサイト）を立ち上げた状態で会話すると、 会話が勝手にテキスト変換され、 キーフレーズに関連するリンクやECサイトの商品リンクが画像として表示される ユーザーは、画像自体やリンクをたどって得た情報を得て、会話を深める  こんなイメージ 必要な機能をリスト化すると
+ 音声認識 キーワード抽出 画像検索  各種機能の実現方法を検討 音声認識 chromeだとWeb Speech APIを使えば実現可能。
+ Webページでブラウザの音声認識機能を使おう - Web Speech API Speech Recognition  これを使う
+キーワード抽出 技術的に簡単そうなのは形態素解析⇒固有名詞抽出？
+Kuromoji.js
+ Kuromoji を使ってブラウザ上で形態素解析を行う (Reactあり/なし)  意外にもクライアントサイドの JavaScript のみ行けました。
+  クライアントPCにkuromojiをインストールが必要   kuromoji.js demo  開発用途なら無料のWeb API
+ Yahoo, テキスト解析Web API, 日本語形態素解析  キーワードを抽出するならこちらがベター
+ Yahoo, テキスト解析Web API, キーフレーズ抽出  キーワードを直接抽出できそうな、Yahooのキーフレーズ抽出APIを使う
+画像検索 関連商品があれば広告を表示 ここで収益化。
+「キーフレーズ⇒商品検索⇒紹介リンク作成」が自動化できればいい。
 	</div>
 </article>
 </main>

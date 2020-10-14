@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on H&#34; service</title>
-    <link>http://hllneerk.github.io/blog/categories/development/</link>
-    <description>Recent content in Development on H&#34; service</description>
+    <title>音声認識 on H&#34; service</title>
+    <link>http://hllneerk.github.io/blog/tags/%E9%9F%B3%E5%A3%B0%E8%AA%8D%E8%AD%98/</link>
+    <description>Recent content in 音声認識 on H&#34; service</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Oct 2020 17:08:23 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2020 17:08:23 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/%E9%9F%B3%E5%A3%B0%E8%AA%8D%E8%AD%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>会話を可視化するサービスの構想: vistalk(仮)</title>
       <link>http://hllneerk.github.io/blog/post/vistalk/</link>
@@ -25,24 +25,6 @@ Kuromoji.js
  Yahoo, テキスト解析Web API, キーフレーズ抽出  キーワードを直接抽出できそうな、Yahooのキーフレーズ抽出APIを使う
 画像検索 関連商品があれば広告を表示 ここで収益化。
 「キーフレーズ⇒商品検索⇒紹介リンク作成」が自動化できればいい。</description>
-    </item>
-    
-    <item>
-      <title>hugoでサムネ画像をtwitter cardに反映</title>
-      <link>http://hllneerk.github.io/blog/post/twitter-card-image-hugo-mainroad/</link>
-      <pubDate>Tue, 13 Oct 2020 14:29:03 +0900</pubDate>
-      
-      <guid>http://hllneerk.github.io/blog/post/twitter-card-image-hugo-mainroad/</guid>
-      <description>&lt;p&gt;hugoのtheme: mainroadはtwitter card自体には対応しているけど、画像は反映されないので、反映されるように改造する&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>費用ゼロで広告も自由に貼れるブログの作り方【エンジニア向け】</title>
-      <link>http://hllneerk.github.io/blog/post/hugo-githubpages/</link>
-      <pubDate>Mon, 12 Oct 2020 15:13:39 +0900</pubDate>
-      
-      <guid>http://hllneerk.github.io/blog/post/hugo-githubpages/</guid>
-      <description>&lt;p&gt;WindowsでHugoを使ってGithub pages上にブログを作る&lt;/p&gt;</description>
     </item>
     
   </channel>
