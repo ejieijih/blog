@@ -6,7 +6,16 @@
     <description>Recent content on H&#34; service</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Oct 2020 14:29:03 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2020 17:08:23 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web APIの基礎知識</title>
+      <link>http://hllneerk.github.io/blog/post/web-api/</link>
+      <pubDate>Tue, 13 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/post/web-api/</guid>
+      <description>&lt;p&gt;Web APIの基礎知識をググりながら整理する。github pagesでどんなWeb API使えるか、あるいは使えないのか知りたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>hugoでサムネ画像をtwitter cardに反映</title>
       <link>http://hllneerk.github.io/blog/post/twitter-card-image-hugo-mainroad/</link>
