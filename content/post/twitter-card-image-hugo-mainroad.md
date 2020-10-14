@@ -22,7 +22,7 @@ static/test.png
 ```sh:test.md
 ---
 
- thumbnail: "test.png"
+thumbnail: "test.png"
 
 ---
 ```
