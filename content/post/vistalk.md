@@ -14,6 +14,8 @@ tags:
 ---
 作りたいサービスの具現化に向けて情報収集する。サービス名は仮に"vistalk"と呼ぶことにする。
 
+<!--more-->
+
 ## 作りたいサービス: vistalk（仮）
 
 1. サービス（Webサイト）を立ち上げた状態で会話すると、
@@ -83,11 +85,11 @@ Amazon
 Rakuten Rapid APIなら割安
 - [Imgur](https://api.rakuten.net/imgur/api/imgur-9/pricing)
 
-だが、完全無料がいい。
+完全無料がいい。
 
 完全無料でやるなら、サーバ使ってスクレイピング  
 - [PythonでGoogle画像検索をして画像をフォルダに保存する](https://qiita.com/Yuki-Takatsu/items/3f30727d5b21a83ea4ed)
 
-★だが、できればgithub pagesで完結したい
+★できればgithub pagesで完結したい
 
 
