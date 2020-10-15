@@ -102,15 +102,15 @@ if (!doNotTrack) {
 <p>1にはビルドしたディレクトリ（docs/）のみを公開するようにし、2はプライベートなリポジトリとする。</p>
 <p>マークダウンファイル（<code>~~~.md</code>）は2にしか含まれないし、非公開設定の下書き原稿（<code>draft: true</code>）はビルドされないので、下書き原稿は公開されない。<br>
 （一度ビルドされてしまうと、以降ビルドされたファイルは残り続けるので注意）</p>
-<p>2つのリポジトリを同期するのがめんどいのでシェルスクリプトを書いておくと吉</p>
+<p>2つのリポジトリに一括でプッシュできるようにシェルスクリプトを書いておくと吉</p>
 <h2 id="進め方">進め方</h2>
 <p>既に運用しているブログがあるため、最終的にURLが変わらないようにする。<br>
 以下の図に示すようにbefore(現状), test, afterの3段階で行っていく。
 <img src="../../make-blog-secure.png" alt=""></p>
 <h2 id="作業">作業</h2>
-<h3 id="before">before</h3>
+<h3 id="beforeフェーズ">beforeフェーズ</h3>
 <p>既に運用しているブログがある現状が<code>before</code></p>
-<h3 id="test">test</h3>
+<h3 id="testフェーズ">testフェーズ</h3>
 <p>github上で以下の2つのリポジトリをつくる</p>
 <ul>
 <li><code>.../blog_private.git</code>: コンテンツファイル群保管用（プライベート）</li>
@@ -140,9 +140,9 @@ cd ..
 git commit -m <span style="color:#e6db74">&#34;initial push&#34;</span>
 git push <span style="color:#f92672">[</span>.../blog_private.git<span style="color:#f92672">]</span> master
 </code></pre></div><p>ブログがちゃんと動作しているか確認</p>
-<h3 id="after">after</h3>
+<h3 id="afterフェーズ">afterフェーズ</h3>
 <p>今使ってるリポジトリ（<code>.../blog.git</code>）を初期化</p>
-<p>testの<code>[.../blog_test.git]</code>を<code>[.../blog.git]</code>で置き換えて全く同じことをする</p>
+<p><code>[.../blog_test.git]</code>を<code>[.../blog.git]</code>で置き換えて<code>test</code>フェーズと全く同じことをする</p>
 <h2 id="シェルスクリプトで一括同期">シェルスクリプトで一括同期</h2>
 <p><code>.../blog2/push2github.sh</code>を作成</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/bash
@@ -161,6 +161,8 @@ cd ..
 git add -A
 git commit -m <span style="color:#e6db74">&#34;post&#34;</span>
 git push <span style="color:#f92672">[</span>.../blog_private.git<span style="color:#f92672">]</span> master
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; powershell
+PS&gt; push2github.sh
 </code></pre></div><h2 id="参考">参考</h2>
 <p><a href="https://yonehub.y10e.com/2019/10/22/20191022_hugo_githubio/">Github pages + Hugoでブログ構築</a></p>
 		</div>
