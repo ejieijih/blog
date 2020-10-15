@@ -1,7 +1,7 @@
 ---
 title: "Web APIの基礎知識"
 date: 2020-10-13T17:08:23+09:00
-# draft: true
+draft: true
 # thumbnail: ".png"
 categories:
   - "Development"
