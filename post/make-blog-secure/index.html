@@ -143,7 +143,25 @@ git push <span style="color:#f92672">[</span>.../blog_private.git<span style="co
 <h3 id="after">after</h3>
 <p>今使ってるリポジトリ（<code>.../blog.git</code>）を初期化</p>
 <p>testの<code>[.../blog_test.git]</code>を<code>[.../blog.git]</code>で置き換えて全く同じことをする</p>
-<h2 id="参考">参考</h2>
+<h2 id="シェルスクリプトで一括同期">シェルスクリプトで一括同期</h2>
+<p><code>.../blog2/push2github.sh</code>を作成</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># build</span>
+hugo
+
+<span style="color:#75715e"># push to public repository</span>
+cd docs
+git add -A
+git commit -m <span style="color:#e6db74">&#34;post&#34;</span>
+git push git@github.com:hllneerk/blog.git main
+cd ..
+
+<span style="color:#75715e"># push to private repository</span>
+git add -A
+git commit -m <span style="color:#e6db74">&#34;post&#34;</span>
+git push git@github.com:hllneerk/blog_private.git master
+</code></pre></div><h2 id="参考">参考</h2>
 <p><a href="https://yonehub.y10e.com/2019/10/22/20191022_hugo_githubio/">Github pages + Hugoでブログ構築</a></p>
 		</div>
 		<footer class="post__footer">
