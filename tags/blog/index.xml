@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on H&#34; service</title>
+    <link>http://hllneerk.github.io/blog/tags/blog/</link>
+    <description>Recent content in blog on H&#34; service</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 15 Oct 2020 12:07:37 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>github pages上のブログで下書き原稿が公開されないようにする</title>
+      <link>http://hllneerk.github.io/blog/post/make-blog-secure/</link>
+      <pubDate>Thu, 15 Oct 2020 12:07:37 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/post/make-blog-secure/</guid>
+      <description>&lt;p&gt;Github pagesを利用するにはソースコードを公開する必要がある。そのため、github pages上のhugoブログでも、非公開（draft: true）のはずの下書き原稿に誰でもアクセスできてしまうという問題がある。これを防ぐため、ビルドしたディレクトリのみを公開するように設定する。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
