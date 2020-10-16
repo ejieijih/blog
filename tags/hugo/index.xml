@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on H&#34; service</title>
+    <title>hugo on tech-n-hacker</title>
     <link>http://hllneerk.github.io/blog/tags/hugo/</link>
-    <description>Recent content in hugo on H&#34; service</description>
+    <description>Recent content in hugo on tech-n-hacker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 15 Oct 2020 12:07:37 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />

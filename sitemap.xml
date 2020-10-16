@@ -3,22 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://hllneerk.github.io/blog/tags/blog/</loc>
+    <lastmod>2020-10-16T13:40:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://hllneerk.github.io/blog/categories/</loc>
-    <lastmod>2020-10-15T17:08:23+09:00</lastmod>
+    <lastmod>2020-10-16T13:40:39+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hllneerk.github.io/blog/tags/github-pages/</loc>
-    <lastmod>2020-10-15T17:08:23+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hllneerk.github.io/blog/</loc>
-    <lastmod>2020-10-15T17:08:23+09:00</lastmod>
+    <loc>http://hllneerk.github.io/blog/categories/poem/</loc>
+    <lastmod>2020-10-16T13:40:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://hllneerk.github.io/blog/post/</loc>
+    <lastmod>2020-10-16T13:40:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hllneerk.github.io/blog/tags/</loc>
+    <lastmod>2020-10-16T13:40:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hllneerk.github.io/blog/</loc>
+    <lastmod>2020-10-16T13:40:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hllneerk.github.io/blog/post/naming-this-blog/</loc>
+    <lastmod>2020-10-16T13:40:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hllneerk.github.io/blog/tags/github-pages/</loc>
     <lastmod>2020-10-15T17:08:23+09:00</lastmod>
   </url>
   
@@ -33,11 +53,6 @@
   </url>
   
   <url>
-    <loc>http://hllneerk.github.io/blog/tags/</loc>
-    <lastmod>2020-10-15T17:08:23+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hllneerk.github.io/blog/tags/web-api/</loc>
     <lastmod>2020-10-15T17:08:23+09:00</lastmod>
   </url>
@@ -45,11 +60,6 @@
   <url>
     <loc>http://hllneerk.github.io/blog/post/web-api/</loc>
     <lastmod>2020-10-15T17:08:23+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hllneerk.github.io/blog/tags/blog/</loc>
-    <lastmod>2020-10-15T12:07:37+09:00</lastmod>
   </url>
   
   <url>

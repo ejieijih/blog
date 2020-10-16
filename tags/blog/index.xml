@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on H&#34; service</title>
+    <title>blog on tech-n-hacker</title>
     <link>http://hllneerk.github.io/blog/tags/blog/</link>
-    <description>Recent content in blog on H&#34; service</description>
+    <description>Recent content in blog on tech-n-hacker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 15 Oct 2020 12:07:37 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Oct 2020 13:40:39 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>このブログのネーミング</title>
+      <link>http://hllneerk.github.io/blog/post/naming-this-blog/</link>
+      <pubDate>Fri, 16 Oct 2020 13:40:39 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/post/naming-this-blog/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;概要&lt;/strong&gt;:
+サービスのネーミング方法をよく調べ考えた上で、このブログのネーミングをする。加えて、自分に合ったネーミング方法を確立する。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>github pages上のブログで下書き原稿が公開されないようにする</title>
       <link>http://hllneerk.github.io/blog/post/make-blog-secure/</link>
