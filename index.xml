@@ -24,7 +24,7 @@
       
       <guid>http://hllneerk.github.io/blog/post/web-api/</guid>
       <description>&lt;p&gt;&lt;strong&gt;概要&lt;/strong&gt;:
-Web APIとはどういうもので、github pagesで使えるのか調べる。Web APIとはhttp経由で呼び出せるアプリで、特にサーバサイドで使えるREST APIは、githubでも使えるらしい。&lt;/p&gt;</description>
+Web APIとはどういうもので、github pagesで使えるのか調べる。Web APIとはhttp経由で呼び出せるアプリで、特にクライアントサイドで使えるREST APIは、githubでも使えるらしい。&lt;/p&gt;</description>
     </item>
     
     <item>
