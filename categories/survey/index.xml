@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Survey on H&#34; service</title>
+    <link>http://hllneerk.github.io/blog/categories/survey/</link>
+    <description>Recent content in Survey on H&#34; service</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 15 Oct 2020 17:08:23 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/categories/survey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web APIとそのgithub pagesでの利用について調べる</title>
+      <link>http://hllneerk.github.io/blog/post/web-api/</link>
+      <pubDate>Thu, 15 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/post/web-api/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;概要&lt;/strong&gt;:
+Web APIとはどういうもので、github pagesで使えるのか調べる。Web APIとはhttp経由で呼び出せるアプリで、特にサーバサイドで使えるREST APIは、githubでも使えるらしい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

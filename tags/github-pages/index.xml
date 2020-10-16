@@ -6,14 +6,25 @@
     <description>Recent content in github pages on H&#34; service</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 15 Oct 2020 12:07:37 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2020 17:08:23 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web APIとそのgithub pagesでの利用について調べる</title>
+      <link>http://hllneerk.github.io/blog/post/web-api/</link>
+      <pubDate>Thu, 15 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/post/web-api/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;概要&lt;/strong&gt;:
+Web APIとはどういうもので、github pagesで使えるのか調べる。Web APIとはhttp経由で呼び出せるアプリで、特にサーバサイドで使えるREST APIは、githubでも使えるらしい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>github pages上のブログで下書き原稿が公開されないようにする</title>
       <link>http://hllneerk.github.io/blog/post/make-blog-secure/</link>
       <pubDate>Thu, 15 Oct 2020 12:07:37 +0900</pubDate>
       
       <guid>http://hllneerk.github.io/blog/post/make-blog-secure/</guid>
-      <description>&lt;p&gt;Github pagesを利用するにはソースコードを公開する必要がある。そのためgithub pages上のhugoブログでも、非公開（draft: true）のはずの下書き原稿に誰でもアクセスできてしまうという問題がある。これを防ぐため、ビルドしたディレクトリのみを公開するように設定する。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;概要&lt;/strong&gt;:
+github pages上のブログで下書き原稿が公開されないようにする。既に運用しているブログのURLが変わらないように段取り良く実行する。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,7 +33,8 @@
       <pubDate>Mon, 12 Oct 2020 15:13:39 +0900</pubDate>
       
       <guid>http://hllneerk.github.io/blog/post/hugo-githubpages/</guid>
-      <description>&lt;p&gt;WindowsでHugoを使ってGithub pages上にブログを作る&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;概要&lt;/strong&gt;:
+WindowsでHugoを使ってGithub pages上にブログを作る&lt;/p&gt;</description>
     </item>
     
   </channel>

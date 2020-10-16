@@ -6,22 +6,40 @@
     <description>Recent content in Tags on H&#34; service</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 15 Oct 2020 12:07:37 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2020 17:08:23 +0900</lastBuildDate><atom:link href="http://hllneerk.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>github pages</title>
+      <link>http://hllneerk.github.io/blog/tags/github-pages/</link>
+      <pubDate>Thu, 15 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REST API</title>
+      <link>http://hllneerk.github.io/blog/tags/rest-api/</link>
+      <pubDate>Thu, 15 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/tags/rest-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web API</title>
+      <link>http://hllneerk.github.io/blog/tags/web-api/</link>
+      <pubDate>Thu, 15 Oct 2020 17:08:23 +0900</pubDate>
+      
+      <guid>http://hllneerk.github.io/blog/tags/web-api/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>blog</title>
       <link>http://hllneerk.github.io/blog/tags/blog/</link>
       <pubDate>Thu, 15 Oct 2020 12:07:37 +0900</pubDate>
       
       <guid>http://hllneerk.github.io/blog/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github pages</title>
-      <link>http://hllneerk.github.io/blog/tags/github-pages/</link>
-      <pubDate>Thu, 15 Oct 2020 12:07:37 +0900</pubDate>
-      
-      <guid>http://hllneerk.github.io/blog/tags/github-pages/</guid>
       <description></description>
     </item>
     
